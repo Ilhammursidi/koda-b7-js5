@@ -1,21 +1,21 @@
 const account = {
-    id : 120,
-    username : "ilhammm",
-    password : "ilham"
-}
+  id: 120,
+  username: "ilham",
+  password: "ilhamlama",
+};
 
 const editPassword = {
-            ...account,
-            password : "ilham"}
-    
-function editPass(passwordBaru) {
-    if (passwordBaru.length < 5) {
-        console.log(account)
-        console.log("minimum password adalah 5 karakter")
-    } else {
-        console.log(editPassword)
-        }
-    }
+  ...account,
+  password: "baru",
+};
 
+function editPass() {
+  if (editPassword.password.length < 5) {
+    console.log(account);
+    console.log("minimum password adalah 5 karakter");
+  } else {
+    console.log(editPassword);
+  }
+}
 
-editPass("ilha");
+editPass();
